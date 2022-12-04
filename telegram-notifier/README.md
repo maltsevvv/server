@@ -1,24 +1,36 @@
-#Оповещение об ошибках состояния systemd в Telegram
+# Оповещение об ошибках состояния systemd в Telegram
+
+** Автоустановка **
+
+    sudo chmod +x /home/pi/server/telegram-notifier/README.md
+    sudo /home/pi/server/telegram-notifier/README.md
+    
+** Ручная установка **
 
     sudo cp /home/pi/server/telegram-notifier/telegram /usr/bin/
     sudo chmod +x /usr/bin/telegram
 
 #Вводим наши данные для Telegram BOT
+
     sudo nano /home/pi/server/telegram-notifier/key.sh
     sudo mkdir /etc/telegram/
     sudo cp /home/pi/server/telegram-notifier/key.sh /etc/telegram/
 
 #Отправка тестового сообщения в Ваш BOT
+
     telegram "Test Message"
 
 #Cообщить о статусе модуля systemd
+
     sudo cp /home/pi/server/telegram-notifier/unit-status-telegram /usr/bin/
     sudo chmod +x /usr/bin/unit-status-telegram
 
 #Отправка тестового сообщения от systemd в Ваш BOT
+
     unit-status-telegram systemd-journald
 
 #Добавить unit-status-telegram@.serivce в systemd
+
     sudo cp /home/pi/server/telegram-notifier/unit-status-telegram@.serivce /etc/systemd/system/
 
 
