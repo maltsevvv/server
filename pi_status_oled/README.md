@@ -32,8 +32,7 @@
 
 #Создаем service для автоматического запуска
 
-    sudo nano /etc/systemd/system/pistatus.service
-
+    sudo tee -a /etc/systemd/system/pistatus.service <<_EOF_
     [Unit]
     Description=RPI status on OLED i2c
     [Service]
@@ -42,7 +41,8 @@
     Restart=always
     [Install]
     WantedBy=multi-user.target
-    
+    _EOF_
+
 #Запускаем pistatus.service
 
     sudo systemctl enable pistatus.service
