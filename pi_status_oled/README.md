@@ -1,39 +1,49 @@
 # piStatus
- Raspberry Pi Status Monitor with SSD1306 128x32 OLED 
+#Raspberry Pi Status Monitor with SSD1306 128x32 OLED 
 
-![prototype scheme](https://github.com/maltsevvv/server/pi_status_oled/raw/main/icon/oled128x32.png)
+#![prototype scheme](https://github.com/maltsevvv/server/pi_status_oled/raw/main/icon/oled128x32.png)
 
 **HOW TO USE IT**
 
-Enable I2C from Raspberry Configuration and Reboot your RPI.
+#Включаем I2C интерфейс на Raspberry
 
     sudo raspi-config
 
-Install modules
+#Устанавливаем необходимые модули
 
     sudo apt-get install -y git python3-pip python3-pil i2c-tools
     sudo pip3 install adafruit-circuitpython-ssd1306
 
-Find I2C
+#Проверяем опридиление I2C 
 
     sudo i2cdetect -y 1
 	
-Clone it from github.
+#Клонируем из github.
 
-    cd ~
-    git clone https://github.com/maltsevvv/server/pi_status_oled.git
+    git clone https://github.com/maltsevvv/server.git
+    
+#Копируем каталог PI_Status_OLED в /usr/local/bin/
 
-Run the code
+    sudo cp -r server/pi_status_oled /usr/local/bin/
+
+#Запустить
 
     sudo python3 /usr/local/bin/pi_status_oled/pistatus.py
 
-If you want it start on Raspberry Pi Startup you must do that.
-Open terminal.
+#Создаем service для автоматического запуска
 
-    sudo nano /etc/rc.local
+    sudo nano /etc/systemd/system/pistatus.service
+    
+    [Unit]
+    Description=RPI status on OLED i2c
+    [Service]
+    Type=simple
+    ExecStart=/usr/bin/python /usr/local/bin/pi_status_oled/pistatus.py
+    Restart=always
+    [Install]
+    WantedBy=multi-user.target
+    
+#Запускаем pistatus.service
 
-Add this line before exit 0
-
-    sudo python3 /usr/local/bin/pi_status_oled/pistatus.py &
-
-Save and reboot your RPI.
+    sudo systemctl enable pistatus.service
+    sudo systemctl start pistatus.service
