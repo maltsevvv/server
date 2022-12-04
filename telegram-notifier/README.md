@@ -40,5 +40,5 @@
 
 #**Для отслеживания сервисов systemd, необходимо добавить OnFailure=unit-status-telegram@%n.service в раздел [Unit]**
 
-#[Unit]  
-#OnFailure=unit-status-telegram@%n.service
+    #[Unit]  
+    #OnFailure=unit-status-telegram@%n.service
