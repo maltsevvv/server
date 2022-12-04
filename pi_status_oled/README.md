@@ -1,8 +1,6 @@
 # piStatus
 #Raspberry Pi Status Monitor with SSD1306 128x32 OLED 
 
-# ![prototype scheme](https://github.com/maltsevvv/server/pi_status_oled/raw/main/icon/oled128x32.png)
-
 # ![prototype scheme](https://github.com/maltsevvv/server/raw/main/pi_status_oled/icon/oled128x32.png)
 
 **HOW TO USE IT**
