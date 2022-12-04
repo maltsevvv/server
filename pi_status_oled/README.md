@@ -33,7 +33,7 @@
 #Создаем service для автоматического запуска
 
     sudo nano /etc/systemd/system/pistatus.service
-    
+
     [Unit]
     Description=RPI status on OLED i2c
     [Service]
