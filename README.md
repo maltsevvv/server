@@ -1,6 +1,8 @@
 # server
 Install
 
+![prototype scheme](https://github.com/maltsevvv/server/blob/main/img/server.png)
+
 # Клонируем из github.
 
     git clone https://github.com/maltsevvv/server.git
