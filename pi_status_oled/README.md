@@ -19,13 +19,11 @@
     sudo i2cdetect -y 1
 	
 #Клонируем из github.
-
     git clone https://github.com/maltsevvv/server.git
     
 #Копируем каталог PI_Status_OLED в /usr/local/bin/
 
-    cd ~/
-    sudo cp -r server/pi_status_oled /usr/local/bin/
+    sudo cp -r /home/pi/server/pi_status_oled /usr/local/bin/
 
 #Запустить
 
@@ -33,7 +31,7 @@
 
 #Копируем service для автоматического запуска
 
-    sudo cp server/pi_status_oled/pistatus.service /etc/systemd/system/
+    sudo cp /home/pi/server/pi_status_oled/pistatus.service /etc/systemd/system/
 
 #Запускаем pistatus.service
 
