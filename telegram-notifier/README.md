@@ -1,16 +1,7 @@
 # Оповещение об ошибках состояния systemd в Telegram
 
-**Автоустановка**
+#Копируем скрипт Telegram в /usr/bin/
 
-    sudo apt install git
-    git clone https://github.com/maltsevvv/server.git
-    sudo chmod +x /home/pi/server/telegram-notifier/README.md
-    sudo /home/pi/server/telegram-notifier/README.md
-    
-**Ручная установка**
-
-    sudo apt install git
-    git clone https://github.com/maltsevvv/server.git
     sudo cp /home/pi/server/telegram-notifier/telegram /usr/bin/
     sudo chmod +x /usr/bin/telegram
 
