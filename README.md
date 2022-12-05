@@ -5,4 +5,5 @@ Install
     sudo server/pi_status_oled/README.md
 
 # telegram-notifier
-sudo server/telegram-notifier/README.md
+
+    sudo server/telegram-notifier/README.md
