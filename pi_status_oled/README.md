@@ -24,24 +24,16 @@
     
 #Копируем каталог PI_Status_OLED в /usr/local/bin/
 
+    cd ~/
     sudo cp -r server/pi_status_oled /usr/local/bin/
 
 #Запустить
 
     sudo python3 /usr/local/bin/pi_status_oled/pistatus.py
 
-#Создаем service для автоматического запуска
+#Копируем service для автоматического запуска
 
-    sudo tee -a /etc/systemd/system/pistatus.service <<_EOF_
-    [Unit]
-    Description=RPI status on OLED i2c
-    [Service]
-    Type=simple
-    ExecStart=/usr/bin/python /usr/local/bin/pi_status_oled/pistatus.py
-    Restart=always
-    [Install]
-    WantedBy=multi-user.target
-    _EOF_
+    sudo cp server/pi_status_oled/pistatus.service /etc/systemd/system/
 
 #Запускаем pistatus.service
 
