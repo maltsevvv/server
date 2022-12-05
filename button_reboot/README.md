@@ -5,6 +5,7 @@
 
 #Копируем reboot.py в /usr/local/bin/
 
+    cd ~/
     sudo cp server/button_reboot/reboot.py /usr/local/bin/
 
 #Копируем service для автозапуска
