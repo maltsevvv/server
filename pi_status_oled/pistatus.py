@@ -73,7 +73,7 @@ def get_cpu_temp():
     global cpu_temp
     cmd = "vcgencmd measure_temp"
     cpu_temp = subprocess.check_output(cmd, shell=True).decode("utf8")
-    return float(re.findall(r'\d+\.\d+', cpu_temp)[0])
+    #return float(re.findall(r'\d+\.\d+', cpu_temp)[0])
     t = Timer(5, get_cpu_temp)
     t.start()
 get_cpu_temp()
