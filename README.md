@@ -17,7 +17,7 @@ Install
     sudo chmod +x server/telegram-notifier/README.md
     sudo server/telegram-notifier/README.md
 
-# botton reboot
+# button reboot
 
     sudo chmod +x server/button_reboot/README.md
     sudo server/button_reboot/README.md
