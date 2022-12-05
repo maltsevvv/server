@@ -16,6 +16,7 @@
 
 #Вводим наши данные для Telegram BOT
 
+    cd ~/
     sudo nano /home/pi/server/telegram-notifier/key.sh
     sudo mkdir /etc/telegram/
     sudo cp /home/pi/server/telegram-notifier/key.sh /etc/telegram/
