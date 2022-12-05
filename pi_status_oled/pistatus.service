@@ -1,0 +1,9 @@
+[Unit]
+Description=RPI status on OLED i2c
+OnFailure=unit-status-telegram@%n.service
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /usr/local/bin/pi_status_oled/pistatus.py
+Restart=always
+[Install]
+WantedBy=multi-user.target
