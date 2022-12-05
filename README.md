@@ -5,7 +5,7 @@ Install
 
     git clone https://github.com/maltsevvv/server.git
 
-# OLED 128x32
+https://github.com/maltsevvv/server/tree/main/pi_status_oled#pistatus
 
     sudo chmod +x server/pi_status_oled/README.md
     sudo server/pi_status_oled/README.md
