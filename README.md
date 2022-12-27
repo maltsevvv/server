@@ -25,4 +25,4 @@ Install
 # Fan Control PWM
 
     sudo chmod +x server/fan_control/README.md
-    sudo server/fan-control/README.md
+    sudo server/fan_control/README.md
