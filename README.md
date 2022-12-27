@@ -22,3 +22,7 @@ Install
     sudo chmod +x server/button_reboot/README.md
     sudo server/button_reboot/README.md
     
+# fan_control
+
+    sudo chmod +x server/fan-control/README.md
+    sudo server/fan-control/README.md
