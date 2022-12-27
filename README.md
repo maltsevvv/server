@@ -24,5 +24,8 @@ Install
     
 # Fan Control PWM
 
+    #Запустить
+    sudo python server/fan_control/fan_control/fan_ctrl.py
+
     sudo chmod +x server/fan_control/README.md
     sudo server/fan_control/README.md
