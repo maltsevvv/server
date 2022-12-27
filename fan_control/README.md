@@ -1,7 +1,7 @@
 # Fan Control
 #Raspberry Pi PWM Fan Control 
 
-# ![prototype scheme](https://github.com/maltsevvv/server/raw/main/fan_control/icon/oled128x32.png)
+# ![prototype scheme](https://github.com/maltsevvv/server/raw/main/fan_control/img/rpi-pwm-fan-3d.png)
 
 **HOW TO USE IT**
 
