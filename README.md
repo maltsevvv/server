@@ -12,17 +12,17 @@ Install
     sudo chmod +x server/pi_status_oled/README.md
     sudo server/pi_status_oled/README.md
 
-# telegram-notifier
+# Telegram Bot Notifier
 
     sudo chmod +x server/telegram-notifier/README.md
     sudo server/telegram-notifier/README.md
 
-# button reboot
+# Button reboot
 
     sudo chmod +x server/button_reboot/README.md
     sudo server/button_reboot/README.md
     
-# fan_control
+# Fan Control PWM
 
     sudo chmod +x server/fan-control/README.md
     sudo server/fan-control/README.md
