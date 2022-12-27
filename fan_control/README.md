@@ -12,13 +12,9 @@
 
     sudo cp -r /home/pi/server/fan_control /usr/local/bin/
 
-#Запустить
-
-    sudo python3 /usr/local/bin/fan_control/fan_ctrl.py
-
 #Копируем service для автоматического запуска
 
-    sudo cp /usr/local/bin/fan_control/fan_ctrl.service /etc/systemd/system/
+    sudo cp /usr/local/bin/fan_control/fan_control.service /etc/systemd/system/
 
 #Запускаем fan_ctrl.service
 
