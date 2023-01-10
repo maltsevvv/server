@@ -6,7 +6,7 @@ import time
 import sys
 #import os
 
-FAN_PIN = 21
+FAN_PIN = 23
 WAIT_TIME = 1
 PWM_FREQ = 25
 
