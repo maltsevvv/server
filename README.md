@@ -83,7 +83,7 @@ sudo systemctl start button_reboot.service
 
 # Raspberry Pi Status Monitor with SSD1306 128x32 OLED 
 
-![Oled 128x32](img/oled_128x32.png)
+![Oled 128x32](img/oled128x32.png)
 
 # Enable I2C Raspberry
 ```
