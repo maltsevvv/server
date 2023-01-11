@@ -32,10 +32,14 @@ cat /sys/class/thermal/thermal_zone0/temp
 ### To test and choose suitable fan speed
 ```
 python fan_calib.py
-Fan Speed: 0
-Fan Speed: 100
-Fan Speed: 40
 ```
+
+`Fan Speed: 0`
+
+`Fan Speed: 100`
+
+`Fan Speed: 40`
+
 
 ### To run main program
 ```
