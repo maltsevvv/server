@@ -137,7 +137,7 @@ sudo systemctl start pistatus.service
 
 ## Led status
 ```
-sudo nano /boot/config.txt`
+sudo nano /boot/config.txt
 ```
 
 `enable_uart=1`
