@@ -85,6 +85,12 @@ sudo systemctl start button_reboot.service
 
 ![Oled 128x32](img/oled128x32.png)
 
+### status show
+  * Time
+  * CPU temp
+  * HDD1 free *** % (/dev/sda1)
+  * HDD2 free *** % (/dev/sdb1)
+
 ### Enable I2C Raspberry
 ```
 sudo raspi-config
