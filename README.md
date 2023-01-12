@@ -121,7 +121,7 @@ python3 pistatus/pistatus.py
 
 ### Configure to auto-run pistatus after reboot
 ```
-sudo cp -r pistatus.py /usr/local/bin/
+sudo cp -r pistatus /usr/local/bin/
 ```
 
 ### Copy fan_control.service
