@@ -29,7 +29,7 @@ bottom = height - padding
 x = 0
 
 # Load default font.
-font = ImageFont.truetype('/usr/local/bin/pi_status_oled/icon/Ubuntu-R.ttf', 18)
+font = ImageFont.truetype('/usr/local/bin/pistatus/icon/Ubuntu-R.ttf', 18)
 
 # Variables
 cpu_temp = 0
@@ -90,27 +90,27 @@ raise_screen_no()
 while True:
     draw.rectangle((0,0,width,height), outline=0, fill=0)
     if screen_no == 1: #cpu°C
-        image = Image.open("/usr/local/bin/pi_status_oled/icon/temperature.bmp").convert("1")
+        image = Image.open("/usr/local/bin/pistatus/icon/temperature.bmp").convert("1")
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype('/usr/local/bin/pi_status_oled/icon/Ubuntu-R.ttf', 30)
+        font = ImageFont.truetype('/usr/local/bin/pistatus/icon/Ubuntu-R.ttf', 30)
         draw.text((x, top+5),       str(cpu_temp[5:9]+'°C'),   font=font, fill=255)
 
     elif screen_no == 2: #hdd1 /dev/sda
-        image = Image.open("/usr/local/bin/pi_status_oled/icon/disk.bmp").convert("1")
+        image = Image.open("/usr/local/bin/pistatus/icon/disk.bmp").convert("1")
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype('/usr/local/bin/pi_status_oled/icon/Ubuntu-R.ttf', 18)
+        font = ImageFont.truetype('/usr/local/bin/pistatus/icon/Ubuntu-R.ttf', 18)
         draw.text((x, top),       str(hdd1_percent),   font=font, fill=255)
         draw.text((x, top+20),    str(hdd1_free),      font=font, fill=255)
 
     elif screen_no == 3: #hdd2 /dev/sdb
-        image = Image.open("/usr/local/bin/pi_status_oled/icon/disk.bmp").convert("1")
+        image = Image.open("/usr/local/bin/pistatus/icon/disk.bmp").convert("1")
         draw = ImageDraw.Draw(image)
-        font = ImageFont.truetype('/usr/local/bin/pi_status_oled/icon//Ubuntu-R.ttf', 18)
+        font = ImageFont.truetype('/usr/local/bin/pistatus/icon//Ubuntu-R.ttf', 18)
         draw.text((x, top),       str(hdd2_percent),   font=font, fill=255)
         draw.text((x, top+20),    str(hdd2_free),      font=font, fill=255)
 
     else: #time
-        font = ImageFont.truetype('/usr/local/bin/pi_status_oled/icon/Ubuntu-R.ttf', 39)
+        font = ImageFont.truetype('/usr/local/bin/pistatus/icon/Ubuntu-R.ttf', 39)
         draw.text((x, top),       str(time_text),      font=font, fill=255)
 
     # Display image.
