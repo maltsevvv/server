@@ -5,6 +5,7 @@
 ## Clone repository
 ```
 cd
+sudo apt install git
 git clone https://github.com/maltsevvv/server.git
 cd server
 ```
@@ -41,14 +42,14 @@ python fan_calib.py
 `Fan Speed: 40`
 
 
-### To run main program
-```
-python fan_ctrl.py
-```
-
 ### Configure to auto-run fan after reboot
 ```
 sudo cp fan_ctrl.py /usr/local/bin/
+```
+
+### To run program
+```
+python /usr/local/bin/fan_ctrl.py
 ```
 
 ### Copy fan_control.service
@@ -102,7 +103,7 @@ sudo raspi-config
 
 ### Install packages
 ```
-sudo apt-get install -y git python3-pip python3-pil i2c-tools
+sudo apt-get install -y python3-pip python3-pil i2c-tools
 ```
 
 ```
@@ -114,14 +115,14 @@ sudo pip3 install adafruit-circuitpython-ssd1306
 sudo i2cdetect -y 1
 ```
 
-### To run main program
-```
-python3 pistatus/pistatus.py
-```
-
 ### Configure to auto-run pistatus after reboot
 ```
 sudo cp -r pistatus /usr/local/bin/
+```
+
+### To run main program
+```
+python3 /usr/local/bin/pistatus/pistatus.py
 ```
 
 ### Copy fan_control.service
